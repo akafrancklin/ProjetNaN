@@ -1,0 +1,21 @@
+body{
+	background-color: #666;
+}
+p{
+	text-align:center;
+	color: #fff;
+	font-size: 30px;
+}
+section{
+	height: 500px;
+}
+.marque{
+	margin-top: 90px;
+	text-align:center;
+	color: #fff;
+	font-size: 30px;
+}
+#reservationsec1{
+	background-color:red;
+	background:red;
+}

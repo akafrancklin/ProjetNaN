@@ -1,0 +1,481 @@
+body{
+	font-family: verdana, sans-serif;
+	padding:0px;
+	margin: 0px;
+}
+/*Menu déroulant*/
+nav{
+	width: 100%;
+	background-color: #424558;
+	height: 70px;
+    
+}
+nav > ul{
+    padding:0px;
+	margin: 0px;
+	display: inline-block;
+	margin-right: 200px;
+
+}
+nav > ul > li{
+	float: left;
+	position: relative;
+}
+nav> ul > li > a{
+padding: 20px 30px;
+color: #fff;
+}
+nav > ul::after{
+content: "";
+display: table;
+clear: both;
+}
+nav li{
+	list-style-type:none;
+}
+.submenu{
+	display: none;
+}
+nav input[type=checkbox]{
+	display: none;
+}
+nav label{
+	display: none;
+}
+nav a{ 
+display: inline-block;
+text-decoration: none;
+transition: color .10s;
+}
+nav > ul > li:hover a{
+	padding: 15px 30px 20px 30px;
+	text-decoration: none;
+}
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 1000;
+}
+i
+{
+	font-size: 20px;
+	
+	padding: 5px;
+	display: inline-block;
+	background-color: blue;
+	border-radius: 50%;
+	transition: transform .5s;
+	transition: color .5s;
+}
+i:hover
+{
+	font-size: 20px;
+	color: white;
+	transform: scale(1.1) rotate(10deg);
+}
+.im1{
+	background-color: blue;
+}
+.im2{
+	background-color: #2da4ff;
+}
+.im6
+{
+	background-color: red;
+}
+.im1:hover{
+	background-color: #2ebaf2;
+}
+.im2:hover{
+	background-color: #0d004c;
+}
+.im6:hover
+{
+	background-color: #9e0b0f;
+}
+
+
+.submenu li a{
+	padding: 15px 30px;
+	font-size: 13px; 
+	color: #222538;
+	width: 270px;
+}
+.submenu li{
+	border-bottom: 1px solid #ccc;
+}
+.menu-accueil:hover{
+	border-top: 5px solid #e44d26;
+	background-color: rgba(228, 77, 38, 0.15);
+}
+.menu-reservation:hover{
+	border-top: 5px solid #0070bb;
+	background-color: rgba(000, 112, 192, 0.15);
+}
+.menu-inscription:hover{
+	border-top: 5px solid #f1dc4f;
+	background-color:rgb(241, 211,79 ,0.15);
+}
+.menu-contact:hover{
+	border-top: 5px solid #BBB;
+	background-color: rgba(220, 220, 220, 0.15);
+}
+.menu-accueil .submenu{
+	background-color: rgba(230, 100, 40);
+}
+.menu-reservation .submenu{
+	background-color: rgba(000, 160, 240);
+}
+.menu-inscription .submenu{
+	background-color: rgb(250, 215, 100);
+}
+.submenu li:hover a{
+	color: #EEE;
+	font-weight: bold;
+}
+.menu-accueil .submenu li:hover{
+	background-color: rgba(210, 77, 60);
+}
+.menu-reservation .submenu li:hover{
+	background-color: rgba(000, 115, 200);
+}
+.menu-inscription .submenu li:hover{
+	background-color: rgba(200, 165, 75);
+}
+nav input[type=checkbox]:checked ~ ul{
+	display: block;
+}
+
+
+/* contact css*/
+
+#section1{
+	background: #333;
+}
+.divider{
+	width: 100px;
+	height: 2px;
+	background: #99e821;
+	margin: 0 auto;
+	margin-top: 70px;
+}
+.row{
+	margin-bottom: 20px;
+}
+.heading{
+	text-align: center;
+	margin-bottom: 60px;
+}
+h2{
+	text-transform: uppercase;
+	font-weight: bold;
+	color: blue; 
+}
+.contact-form{
+	font-size: 20px;
+	background: #fff;
+	padding: 40px;
+	border-radius: 10px;
+}
+.form-control{
+	height: 50px;
+	font-size: 18px;
+}
+.commentaire{
+	font-style: italic;
+	font-size: 18px;
+	color:red;
+	height: 25px;
+}
+.contact-form input[type=submit]{
+	margin: 40px auto 0px;
+	display: block;
+}
+.button1{
+	border: 1px solid #ddd;
+	background: #2da4ff;
+	color:#fff;
+	width: 100%;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 15px;
+	border-radius: 5px;
+	transition: all 0.3s ease-in 0s;
+}
+.button1:hover{
+	background: #333;
+	border-color: #2da4ff;
+}
+.merci{
+	text-align: center;
+	margin-top: 15px;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+/*index.html*/
+
+.item
+{
+	text-align: center;
+	height: 480px;
+	width: 100%;
+	
+}
+.carousel-control.left, .carousel-control.right
+{
+	background-image: none;
+}
+#evader
+{
+	background: rgba(200, 205, 200);
+	margin-bottom: 30px;
+	margin-top: 5px;
+	background-size: cover;
+}
+#evader h2
+{
+	font-family: serif;
+	text-align: center;
+	font-size: 40px;
+	color: orange;
+	padding-bottom: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
+#secondsec{
+	background: #333;
+}
+.secondsec-bloc{
+	background-size: cover;
+	 width:80%;
+    margin: 0 auto;
+    padding: 30px;
+    background: #ddd;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 30px;
+
+}
+.image{
+	height: 400px;
+	width: 90%;
+	background-size: cover;
+	border-radius: 50px;
+}
+#firstsec{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 530px;
+	background: rgba(200, 205, 200);
+
+}
+.diaporama{
+	margin: 0 auto;
+	width: 960px;
+	height: 500px;
+	border: 3px solid #333;
+	background-image: url(images/transfert.jpg);
+	background-size: cover;
+	margin-top: 30px;
+	webkit-animation-name: diapo1;
+	webkit-animation-duration: 9s;
+	webkit-animation-timing-function: linear;
+	webkit-animation-iteration-count: infinite;
+	webkit-animation-direction: normal;
+
+	moz-animation-name: diapo1;
+	moz-animation-duration: 9s;
+	moz-animation-timing-function: linear;
+	moz-animation-iteration-count: infinite;
+	moz-animation-direction: normal;
+
+	animation-name: diapo1;
+	animation-duration: 9s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+/*espace client*/
+h3{
+	font-family: serif;
+	text-align: center;
+	font-size: 40px;
+	color: red;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#reservationsec{
+	background: rgba(200, 205, 200);
+}
+#reservationsec1{
+	background: rgba(200, 205, 200);
+}
+/* inscription */
+
+#inscriptionsec
+{
+    height: 580px;
+    background: url('images/meuf.jpg') center;
+}
+#inscriptionsec h2
+{
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 150px 0 40px 0;
+    margin-bottom: 20px;
+}
+.button
+{
+    display: block;
+    width: 120px;
+    height: 50px;
+    background: red;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 auto;
+    line-height: 50px;
+    text-align: center;
+    border-radius:  3px;
+}
+.button:hover
+{
+     background: #02b8dd;
+}
+/* information */
+#information
+{
+    background: rgba(200, 205, 200);
+}
+#information .heading h2
+{
+    color: orange;
+}
+.information-block
+{
+    width:80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    background: red;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+
+}
+.information-block h5
+{
+    color:#fff;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.information-block .glyphicon
+{
+    font-size: 40px;
+}
+.information-block h3
+{
+     color: orange;
+}
+.information-block h4
+{
+   margin-bottom: 20px;
+   color:#fff;
+}
+.information-block p
+{
+  font-weight: bold;
+  color:#fff;
+}
+.information-block .orange-divider
+{
+    margin-bottom: 20px;
+    color: orange;
+}
+
+
+
+
+/* FOOTER */
+
+footer
+{
+    height: 260px;
+    background-color: #444;
+}
+footer h1
+{
+    color:#fff;
+    text-align: center;
+    padding-top: 80px;
+}
+.copyright
+{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+    color: #777;
+}
+.wrapper
+{
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.bleu{
+
+	color: blue;
+}
+/*diaporama*/
+@-webkit-keyframes diapo1{
+	0%{background-image:  url("images/transfert.jpg");}
+	33%{background-image:  url("images/ordi.jpg");}
+	66%{background-image:  url("images/money.jpg");}
+
+}
+@-moz-keyframes diapo1{
+	0%{background-image:  url("images/transfert.jpg");}
+	33%{background-image:  url("images/ordi.jpg");}
+	66%{background-image:  url("images/money.jpg");}
+
+}
+@keyframes diapo1{
+	0%{background-image:  url("images/transfert.jpg");}
+	33%{background-image:  url("images/ordi.jpg");}
+	66%{background-image:  url("images/money.jpg");}
+
+}
+
+@media screen and (max-width: 780px){
+	.menu-mobile{
+		display: block;
+		color: #fff;
+		background-color: rgba(29, 197, 151, 0.97);
+		text-align: center;
+		padding: 12px 0px;
+	}
+	nav ul{
+		display: none;
+	}
+	nav ul li, nav ul li a{
+		width: 100%;
+		text-align: center;
+	}
+	nav ul li a, nav ul li:hover a{
+		padding: 10px 0px;
+	}
+	nav li:hover .submenu{
+		display:  block;
+		position: static;
+	}
+}
+
+
+
